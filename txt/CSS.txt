@@ -1,0 +1,12 @@
+Basic
+- CSS Text Styling ( font-size , font-family , text-align )
+- CSS Box model ( margin , padding , border )
+- CSS Layout ( display: block , inline-block , Flex , Grid , none )
+- CSS Position (static , relative , absolute , fixde , sticky )
+- CSS float wrap text ได้ ( font : left , float: right , Footer)
+- CSS Image ( background-color , background-image )
+- หน่วย CSS ( px , rem , em , vw , vh , percent )    
+
+Advance นิดนึง
+- CSS Pseudo class ( :hover , :active , :first-child ) - Event
+- CSS Transition and animetion

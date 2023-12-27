@@ -1,0 +1,29 @@
+CSS แบบ Advence นิดนึง
+- CSS selector more
+    - class ใน parent ( .container .item )
+    - class แบบติดกัน ( .container .item )
+    - class แบบลูกติดกัน ( .container > .item )
+    - class แบบเพื่อนบ้าน ( .container + .item )
+    - attribute selector ( เลือกตาม attribute เช่น name ใน input )
+- CSS Pseudo selector
+    - Pseudo class ( ทำตาม state หรือ position ของ DOM )
+    - Pseudo element แทรก CSS ใน element ( DOM ) เป็น element พิเศษ 
+- CSS Transition / Transform / Animation สำหรับการทำ Animation และตำแหน่ง CSS
+    - Transtion
+    - Transform
+    - Animation
+
+Responsive
+    - Basic struture ของ CSS Responsive
+    - Guideline การแบ่งหน้าจอ
+        - https://tailwindcss.com/docs/responsive-design
+        -
+        - insponctor tools สำหรับปรับขนาด Device
+
+ตัวอย่าง Responsive
+    - Viewports ( Breakpoint )
+    - Iimages ( srcset )
+    - Fluid Layouts ( Flex ) และ Flexible Grid Systems ( Grid )
+    - Menu bar ( Desktop ) and nav bar ( mobile ) ( display : none ) - Easy example
+
+- ปรับ Form ให้เป็น Responsive ( และแยกไฟล์ CSS ) 

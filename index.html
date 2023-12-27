@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ส่วนนี้จะไม่แสดงให้บนหน้า Browser -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Development 101</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital@0;1&display=swap" rel="stylesheet">
+    <style>
+        /* comment */
+        /* 1. แต่งใคร ? 2. แต่งอะไร ? */
+        /*
+            CLASS , DOM , ID 
+        */
+
+        /* แนะนำถ้ามีอันเดียวให้ใช้ id 
+           ส่วนถ้าต้องการใช้หลานครั้งให้ใช้ class
+        */
+
+        /* 1.class */
+        #register {
+            color: blue;
+        }
+
+        /* 2.dom */
+        .from1 {
+            border: 2px blue solid;
+            display: block;
+        }
+
+        /* 3.id */
+        body {
+            font-family: 'Kanit', sans-serif;
+        }
+
+        * { 
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        /* display :  block , inline , inline-block , flex , grid แค่นี้ก็พอเพียงสำหรับการพัฒนาเว็บแล้ว*/
+
+        /* position : top , bottom , left , right */
+        .relative{
+            position: relative;
+            left: 20px;
+        }
+
+        .absolute {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .fixed {
+            position: fixed;
+            top: 0;
+            right: 0;
+        }
+
+
+        .sticky {
+            position: sticky;
+            top: 50px;
+        }
+
+        .right{
+            float: right;
+        }
+
+        .left{
+            float: left;
+        }
+
+        .image {
+            background-image: url(https://fastly.picsum.photos/id/51/200/200.jpg?hmac=AxDMciMBjL8UIKzxl80paiBUywP7elWptqQW_qTq8vw);
+            height: 200px;
+            width: 100px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: top right;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- ส่วนที่แสดงออกไปในหน้าจอของ Browser -->
+
+    <!-- CSS Image -->  
+    <div class="image"></div>
+
+    <!-- CSS float wrap text -->
+    <!-- <div class="left"><img src="https://fastly.picsum.photos/id/849/200/200.jpg?hmac=LwsdGn2endKvoLY10FPqtfqKYCVMbPEp5J6S_tUN1Yg" alt=""></div>
+    <div>Get</div>
+    <div style="clear: both;"></div> -->
+
+    <!-- CSS Position -->
+    <!-- <div class="container">
+        <div class="static">Static</div>
+        <div class="relative">Relative</div>
+        <div class="absolute">Absolute</div>
+        <div class="fixed">Fixed</div>
+        <div class="sticky">Sticky</div>
+    </div> -->
+    <!-- 1. html content-->
+    <h1 id="register">Hello World !</h1>
+
+    <p>
+        Today let's Learning to HTMl
+    </p>
+
+    <div>
+        <ul>
+            <li>Item1</li>
+            <li>Item2</li>
+            <li>Item3</li>
+        </ul>
+        <ol>
+            <li>Item1</li>
+            <li>Item2</li>
+            <li>Item3</li>
+            </ul>
+    </div>
+
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        Row
+                    </th>
+                    <th>
+                        Row1
+                    </th>
+                    <th>
+                        Row2
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        column
+                    </td>
+                    <td>
+                        1
+                    </td>
+                    <td>
+                        2
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        column2
+                    </td>
+                    <td>
+                        1
+                    </td>
+                    <td>
+                        2
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div>
+        <a href="https://youtu.be/bPsj3DP98Uc?list=PLwZ0y9k-cYXCSSU3ujBqBWMbtZcW2OGkA">Click</a>
+        <br>
+        <br>
+    </div>
+    <div>
+        <img src="https://fastly.picsum.photos/id/593/200/200.jpg?hmac=E26lTUTkzs_AeuWXrkT-kFTudfYDTVCjgKVE_HDzRmk"
+            alt="Tiger">
+    </div>
+
+    <!-- 3. form-->
+    <form action="Register" >
+        <div>Register form</div>
+        <span>Firstname<input type="text" class="from1"></span>
+        <span>Lastname<input type="text" class="from1"></span>
+        <span>age <input type="number" mix="100" min="0" class="from1" ></span>
+        <span>Gender
+            <div style="display: inline-block;">
+                <input name="gender" type="radio">Man
+            </div>
+            <div style="display: inline-block;">
+                <input name="gender" type="radio">Woman
+            </div>
+            <div style="display: inline-block;">
+                <input name="gender" type="radio">other
+            </div>
+        </span>
+        <span>interest
+            <div>
+                <input name="interest" type="checkbox">Book
+            </div>
+            <div>
+                <input name="interest" type="checkbox">Game
+            </div>
+            <div>
+                <input name="interest" type="checkbox">other
+            </div>
+        </span>
+        <span>
+
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </span>
+    </form>
+    <button>ส่งข้อมูล</button>
+    <input type="submit" value="ส่งข้อมูล">
+</body>
+
+</html>

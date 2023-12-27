@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <title>Regsiter</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Kanit", sans-serif;
+      }
+
+      .container {
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgb(221, 251, 251);
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      .header {
+        font-size: 30px;
+        text-align: center;
+      }
+      .header-form {
+        width: 140px;
+      }
+
+      .flex1 {
+        display: flex;
+      }
+
+      .form-input {
+        margin-bottom: 10px;
+      }
+
+      input.form1 , textarea {
+        border: 1px #b3aeaef0 solid;
+        border-radius: 5px;
+        width: 100%;
+      }
+
+      .center {
+        text-align: center;
+      }
+
+      .button {
+        border: 0;
+        width: 100%;
+        height: 35px;
+        background-color: #58f644;
+        color: #ffffff;
+        border-radius: 6px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <form action="regsiter" class="container">
+      <div class="header form-input">Register</div>
+      <div class="flex1 form-input">
+        <div class="header-form">Firstname</div>
+        <input type="text" class="form1"/>
+      </div>
+      <div class="flex1 form-input">
+        <div class="header-form">Lastname</div>
+        <input type="text" class="form1"/>
+      </div>
+      <div class="flex1 form-input">
+        <div class="header-form">age</div>
+        <input type="number" min="0" max="100" class="form1"/>
+      </div>
+
+      <div class="felx1 form-input">
+        <div class="header-form">Gander</div>
+        <div>
+          <input type="radio" name="gender" id="" />Man
+          <input type="radio" name="gender" id="" />Woman
+          <input type="radio" name="gender" id="" />other
+        </div>
+      </div>
+
+      <div class="form-input">
+        interest
+        <div><input type="checkbox" name="interest" />Book</div>
+        <div><input type="checkbox" name="interest" />Game</div>
+        <div><input type="checkbox" name="interest" />other</div>
+      </div>
+      <div class="form-input">
+        <div>Elucidation</div>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+    </div>
+    <div class="form-input center">
+        <a href="">T&C</a>
+      </div>
+      <div class="center">
+        <input class="button" type="submit" value="ส่งข้อมูล" />
+      </div>
+    </form>
+  </body>
+</html>
